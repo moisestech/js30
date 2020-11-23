@@ -1,1 +1,1 @@
-console.log("JS30");
+console.log("JS30 Sticky-Nav");

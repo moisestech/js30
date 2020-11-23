@@ -1,1 +1,1 @@
-console.log("JS30");
+console.log("JS30 Video-Speed-Controller-UI");

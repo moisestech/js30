@@ -1,15 +1,48 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Understanding JavaScript's Capture</title>
+</head>
+<body class="bod">
 
-<html>
-  <head>
-    <title>Event-Capture-Propagation, Bubbling-and-Once</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="" />
-  </head>
-
-  <body>
-    <div id="root">
-      <h1>Event-Capture-Propagation, Bubbling-and-Once<</h1>
+  <div class="one">
+    <div class="two">
+      <div class="three">
+      </div>
     </div>
-    <script type="text/javascript" src="index_bundle.js"></script>
-  </body>
+  </div>
+
+<style>
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after { 
+    box-sizing: inherit; 
+  }
+
+  div {
+    width: 100%;
+    padding: 100px;
+  }
+
+  .one {
+    background: thistle;
+  }
+
+  .two {
+    background: mistyrose;
+  }
+
+  .three {
+    background: coral;
+  }
+</style>
+
+<button></button>
+<script>
+
+</script>
+</body>
 </html>

@@ -1,0 +1,101 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: whitesmoke;
+  color: black;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.photobooth {
+  background: white;
+  max-width: 150rem;
+  margin: 2rem auto;
+  border-radius: 2px;
+}
+
+/*clearfix*/
+.photobooth:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.photo {
+  width: 100%;
+  float: left;
+}
+
+.player {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+}
+
+/*
+  Strip!
+*/
+
+.strip {
+  padding: 2rem;
+}
+
+.strip img {
+  width: 100px;
+  overflow-x: scroll;
+  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background: white;
+}
+
+.strip a:nth-child(5n + 1) img {
+  transform: rotate(10deg);
+}
+.strip a:nth-child(5n + 2) img {
+  transform: rotate(-2deg);
+}
+.strip a:nth-child(5n + 3) img {
+  transform: rotate(8deg);
+}
+.strip a:nth-child(5n + 4) img {
+  transform: rotate(-11deg);
+}
+.strip a:nth-child(5n + 5) img {
+  transform: rotate(12deg);
+}
